@@ -1,7 +1,5 @@
 import React,{Fragment} from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Input } from "reactstrap";
-import { Navigate, NavLink } from "react-router-dom";
+import { Navigate} from "react-router-dom";
 import { connect } from "react-redux";
 import { setAlert } from "../../actions/alert";
 import { login } from "../../actions/auth";
@@ -20,7 +18,7 @@ class Login extends React.Component {
     e.preventDefault();
     const { pwd, email } = this.state;
 
-    const newuser = { email, password: pwd };
+    // const newuser = { email, password: pwd };
     this.props.login(email, pwd);
   };
 

@@ -32,7 +32,7 @@ const App = () => {
           <Navbar />
           <Alert />
           <Routes>
-            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<Login />} />
             <Fragment>
               <Route path="/dashboard" element={<Dashboard />}  />
             </Fragment>

@@ -12,7 +12,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
      
         
      <li>
-        <a onClick={logout} href="/login" style={{ textDecoration: 'none' }}>
+        <a onClick={logout} href="/" style={{ textDecoration: 'none' }}>
           <span className="hide-sm">Logout</span>
         </a>
       </li>

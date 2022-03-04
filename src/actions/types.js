@@ -9,6 +9,8 @@ export const PROFILE_ERROR = "PROFILE_ERROR";
 export const CLEAR_PROFILE = "CLEAR_PROFILE";
 export const LOGOUT = "LOGOUT";
 export const UPDATE_PROFILE = "UPDATE_PROFILE";
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
+export const REGISTER_FAIL = "REGISTER_FAIL";
 
 
 

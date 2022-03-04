@@ -4,7 +4,7 @@ import { GET_PROFILE, PROFILE_ERROR,CLEAR_PROFILE } from "./types";
 import { BASE_URL } from "./../config/default";
 
 //Create or update profile
-export const createProfile = (formData, navigate, edit = false) => async (dispatch) => {
+export const createProfile = (formData,  edit = false) => async (dispatch) => {
   try {
     const config = {
       headers: {

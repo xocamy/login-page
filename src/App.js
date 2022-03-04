@@ -12,6 +12,8 @@ import Alert from "./components/layout/Alert";
 import { loadUser } from "./actions/auth";
 import setAuthToken from "./utils/setAuthToken";
 import Dashboard from "./components/dashboard/Dashboard";
+import Register from "./components/layout/Register";
+import Landing from "./components/layout/Landing";
 
 
 
@@ -32,7 +34,9 @@ const App = () => {
           <Navbar />
           <Alert />
           <Routes>
-            <Route path="/" element={<Login />} />
+          <Route path="/" element={< Landing />} />
+          <Route path="/register" element={< Register />} />
+            <Route path="/login" element={<Login />} />
             <Fragment>
               <Route path="/dashboard" element={<Dashboard />}  />
             </Fragment>

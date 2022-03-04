@@ -13,16 +13,16 @@ const Dashboard = ({
 }) => {
   const [ formData, setFormData ] = useState({
     username: "",
-    mobilenumber: "",
-    email: "",
-    address: ""
+     email: "",
+    address: "",
+    event:""
   });
 
   const {
     username,
-    mobilenumber,
     email,
-    address
+    address,
+    event
    } = formData;
 
    
@@ -48,13 +48,13 @@ const Dashboard = ({
           className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(1)}
         >
-          Tab 1
+          Event listing Form
         </button>
         <button
           className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(2)}
         >
-          Tab 2
+          View Your Data
         </button>
        
       </div>
@@ -71,7 +71,7 @@ const Dashboard = ({
              <form className="form mt-3" >
 
                  <FormGroup>
-                 <Label>User Name</Label><br/>
+                 <Label>Name</Label><br/>
                   <Input 
                     type="text" 
                     name="username" 
@@ -81,15 +81,7 @@ const Dashboard = ({
                   />
                  </FormGroup>
 
-                 <FormGroup>
-                 <Label>Mobile Number</Label><br/>
-                  <Input 
-                    name="mobilenumber" 
-                    placeholder="*mobile number"  
-                    value={mobilenumber} 
-                    onChange={e => handleChange("mobilenumber", e.target.value)} 
-                  />
-                 </FormGroup>
+                 
 
                  <FormGroup>
                  <Label>Email</Label><br/>
@@ -111,7 +103,22 @@ const Dashboard = ({
                     value={address} 
                     onChange={e => handleChange("address", e.target.value)} 
                   />
-                 </FormGroup><br/>
+                 </FormGroup>
+
+                 <FormGroup>
+                 <Label>Event</Label><br/>
+                  <Input 
+                    type="textarea" 
+                    name="event" 
+                    placeholder="*event"  
+                    value={event} 
+                    onChange={e => handleChange("event", e.target.value)} 
+                  />
+                 </FormGroup>
+                 
+                 <br/>
+
+                 
 
           <Input
           
@@ -149,16 +156,6 @@ const Dashboard = ({
             />
            </FormGroup>
 
-          <FormGroup>
-          <Label>Mobile Number</Label><br/>
-           <Input 
-           name="mobilenumber" 
-           placeholder="*mobile number"  
-           value={mobilenumber} 
-          onChange={e => handleChange("mobilenumber", e.target.value)} 
-          readOnly
-          />
-          </FormGroup>
 
           <FormGroup>
           <Label>Email</Label><br/>
@@ -182,14 +179,28 @@ const Dashboard = ({
             onChange={e => handleChange("address", e.target.value)} 
             readOnly
             />
-          </FormGroup><br/>
+          </FormGroup>
+
+          <FormGroup>
+          <Label>Event</Label><br/>
+            <Input 
+            type="textarea" 
+            name="event" 
+            placeholder="*event"  
+            value={event} 
+            onChange={e => handleChange("event", e.target.value)} 
+            readOnly
+            />
+          </FormGroup>
+          <br/>
           <button type="button" class="btn btn-dark" 
           style={{backgroundColor: "red"}}
           onClick={() => {deleteData() 
             setFormData({username: "",
-            mobilenumber: "",
             email: "",
-            address: ""})
+            address: "",
+            event:""
+          })
           }}
           >Delete</button>
 

@@ -17,8 +17,6 @@ class Login extends React.Component {
   submitForm = async (e) => {
     e.preventDefault();
     const { pwd, email } = this.state;
-
-    // const newuser = { email, password: pwd };
     this.props.login(email, pwd);
   };
 
@@ -34,8 +32,10 @@ class Login extends React.Component {
       <section className ="landing">
       <div className ="dark-overlay">
         <div className ="landing-inner">
-        <Fragment> <h1 className ="large text-primary">Sign In</h1>
+        <Fragment> <h1 className ="large text-primary">Login User</h1>
     <p className ="lead"><i className ="fas fa-user"></i> Sign Into Your Account</p>
+
+
     <form className ="form" onSubmit={(e) => submitForm(e)} >
      
       <div className ="form-group">

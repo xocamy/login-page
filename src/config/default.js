@@ -1,1 +1,1 @@
-export const BASE_URL = "https://login-page-formdata.herokuapp.com";
+export const BASE_URL = "https://login-register-events.herokuapp.com";

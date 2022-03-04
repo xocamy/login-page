@@ -29,6 +29,11 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         <FontAwesomeIcon icon={['fas', 'unlock']}/>{' '}
           Login</NavLink>
       </li>
+      <li>
+        <NavLink to="/register" style={{ textDecoration: 'none' }} >
+        <FontAwesomeIcon icon={['fas', 'user']}/>{' '}
+          Register</NavLink>
+      </li>
       
     </ul>
   );
@@ -37,7 +42,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <nav className="navbar bg-dark">
       <h1>
         <NavLink to="/" style={{ textDecoration: 'none' }}>
-         Nemesis Consultants LLP Task
+         Task
         </NavLink>
       </h1>
       {!loading && (

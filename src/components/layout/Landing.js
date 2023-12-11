@@ -9,7 +9,7 @@ const Landing = ({ auth }) => {
     <section className="landing">
       <div className="dark-overlay">
         <div className="landing-inner">
-          <h1 className="x-large">Register Event Application</h1>
+          <h1 className="x-large">Lucid Login</h1>
           <p className="lead">
             If your already registered then login 
           </p>

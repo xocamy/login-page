@@ -11,7 +11,7 @@ const Landing = ({ auth }) => {
         <div className="landing-inner">
           <h1 className="x-large">Register Event Application</h1>
           <p className="lead">
-            If you already register then login 
+            If your already registered then login 
           </p>
           <div className="buttons">
             <NavLink to="/register" className="btn btn-primary">

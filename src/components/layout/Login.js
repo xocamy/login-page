@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Login Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
   <script>
     function redirectToAnotherWebsite() {
-      var email = "admin@lucid.com";
-      var password = "LUCID-ADMIN";
+      var email = "example@example.com";
+      var password = "password123";
       var enteredEmail = document.getElementById("email").value;
       var enteredPassword = document.getElementById("password").value;
 
       if (enteredEmail === email && enteredPassword === password) {
-        window.location.replace("https://lucid.cyclic.app");
+        window.location.replace("https://www.example.com");
       } else {
         alert("Incorrect email or password");
       }

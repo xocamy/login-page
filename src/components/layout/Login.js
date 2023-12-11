@@ -5,7 +5,7 @@ function redirectToAnotherWebsite() {
   var enteredPassword = document.getElementById("password").value;
 
   if (enteredEmail === email && enteredPassword === password) {
-    window.location.replace("https://lucid.cyclic.app/);
+    window.location.replace("https://lucid.cyclic.app/");
   } else {
     // Incorrect email or password, do nothing
   }

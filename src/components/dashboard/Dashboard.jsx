@@ -48,7 +48,7 @@ const Dashboard = ({
           className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(1)}
         >
-          Event listing Form
+          Lucid Login
         </button>
         <button
           className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
